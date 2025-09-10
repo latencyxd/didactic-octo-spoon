@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Linhas de Transmissão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de Linhas de Transmissão</h1>
+
+  <label>R (Ω/m): <input type="number" id="R" step="0.0001"></label>
+  <label>L (H/m): <input type="number" id="L" step="0.0000001"></label>
+  <label>G (S/m): <input type="number" id="G" step="0.000000001"></label>
+  <label>C (F/m): <input type="number" id="C" step="0.0000000001"></label>
+  <label>Frequência (Hz): <input type="number" id="f" value="60"></label>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
