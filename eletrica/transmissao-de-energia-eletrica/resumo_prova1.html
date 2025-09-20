@@ -3,49 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <title>Resumo da Prova 1 › Transmissão</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/script.js" defer></script>
-
-
-    <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Energia Elétrica › Transmissão</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/script.js" defer></script>
-</head>
-<body>
-    <aside class="sidebar">
-        <h2>Energia Elétrica</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Transmissão Overview</a></li>
-                <li><a href="capitulo1.html">Capítulo 1</a></li>
-                <li><a href="capitulo2.html">Capítulo 2</a></li>
-                <li><a href="capitulo3.html">Capítulo 3</a></li>
-                <li><a href="calculadora.html">Calculadora do módulo</a></li>
-                <li><a href="../index.html">Voltar ao curso</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Resumo da Prova 1 do módulo de Transmissão de Energia Elétrica.">
     <meta name="keywords" content="transmissão, energia elétrica, prova, resumo">
-</head>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11.8.0/lib/browser/math.min.js" defer></script>
+    <script src="../assets/script.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+
+
+
+
+
+ </head>
+<p>
+  $$ 
+  \begin{bmatrix}
+  1 & 2 & 3 \\
+  4 & 5 & 6
+  \end{bmatrix}
+  $$
+</p> --> -->
+
+ 
 <body>
-    <h1>Qual a impedância média de uma linha de transmissão? O que é o efeito corona?</h1>
-    <h2>Uns 200 a 500 ohms</h2>
+    <main>
+        <h1>Aula 1 - Exercícios</h1>
+        
+        <h2>Exercício 1</h2>
+        <p>Calcule a impedância de uma linha de transmissão com os seguintes parâmetros:</p>
+        <ul>
+            <li>Resistência: 0.01772 Ω/km</li>
+            <li>Indutância: 0.704685 mH/km</li>
+            <li>Capacitância: 0.01622637 μF/km</li>
+            <li>Comprimento: 300 km</li>
+            <li>Tensão nominal: 500 kV</li>
+            <li>Fator de potência: 0.9</li>
+        </ul>
 
-    <h1>O que é a) Defina transposição de linha. Explique seu objetivo. b) Discuta os efeitos que uma linha de transmissão pode provocar em cercas, trilhos ou linhas de distribuição próximas.</h1>
-    <h2>Ce vira os cabos la e tal</h2>
+        <h2>Exercício 2</h2>
+        <p>Analise o desempenho da linha de transmissão considerando a compensação reativa.</p>
+        
+        <h1>1ª Questão (2 pontos)</h1>
+        <p>A linha de transmissão da figura abaixo apresenta as seguintes matrizes geométricas:</p>
+        <p>Matriz de indutância:<br>
+        $$
+        \begin{bmatrix}
+        5,16277 & 1,65731 & 1,28298 \\
+        1,65731 & 5,46002 & 1,65731 \\
+        1,28298 & 1,65731 & 5,16277
+        \end{bmatrix}
+        $$</p>
+        <p>Matriz de capacitância:<br>
+        $$
+        \begin{bmatrix}
+        5,10027 & 1,65731 & 1,28298 \\
+        1,65731 & 5,39752 & 1,65731 \\
+        1,28298 & 1,65731 & 5,10027
+        \end{bmatrix}
+        $$</p>
+        <p>a) Calcular os valores das impedâncias (indutância e capacitância/admitância) de sequência zero e positiva em Ω/km.</p>
+        <p>b) Calcular a impedância de surto, a impedância característica, a velocidade de propagação, o comprimento de onda e a potência natural.</p>
+        
+        <h1>2ª Questão (1 ponto)</h1>
+        <p>A capacitância e a indutância por unidade de comprimento de uma linha trifásica, operando a 110 kV, são 0,01 µF e 2,5 mH. A impedância de surto da linha é:</p>
+        <p>
+            (a) 50 Ω<br>
+            (b) 500 Ω<br>
+            (c) 250 Ω<br>
+            (d) 300 Ω<br>
+            (e) Nenhuma das anteriores
+        </p>
 
-    <h1>Uma longa linha de transmissão é energizada na extremidade emissora e mantida em circuito aberto na extremidade receptora. Após o período transitório os valores da tensão Vs na extremidade emissora e Vr na extremidade receptora satisfazem a seguinte relação: (a) Vs = Vr (b) Vs é maior que Vr (c) Vs é menor que Vr (d) Nenhuma das anteriores</h1>
-    <h2></h2>
+        <h1>3ª Questão (1 ponto)</h1>
+        <p>a) Defina transposição de linha. Explique seu objetivo.</p>
+        <p>b) Discuta os efeitos que uma linha de transmissão pode provocar em cercas, trilhos ou linhas de distribuição próximas.</p>
+        
+        <h1>4ª Questão (1 ponto)</h1>
+        <p>Uma longa linha de transmissão é energizada na extremidade emissora e mantida em circuito aberto na extremidade receptora. Após o período transitório os valores da tensão Vs na extremidade emissora e Vr na extremidade receptora satisfazem a seguinte relação:</p>
+        <p>
+            (a) Vs = Vr<br>
+            (b) Vs é maior que Vr<br>
+            (c) Vs é menor que Vr<br>
+            (d) Nenhuma das anteriores
+        </p>
+        
+        <h1>5ª Questão (2 pontos)</h1>
+        <p>Uma LT ideal, Z₀ = 50 Ω, comprimento l = 200 km é energizada por uma fonte de tensão contínua U = 100 kV. Calcular:</p>
+        <p>a. Valores de tensão e corrente no receptor com a LT em vazio, no instante t = l/v;</p>
+        <p>b. Valores de tensão e corrente no receptor com a LT em curto;</p>
+        <p>c. Valores de tensão e corrente no receptor para Z₂ = 20 Ω;</p>
+        <p>d. Valores de tensão e corrente no receptor para Z₂ = 80 Ω;</p>
+        <p>e. Qual é o tempo necessário para que a LT toda atinja novos valores de tensão, sabendo-se que L = 0,62x10⁻³ [H/km] e C = 0,216 x10⁻⁶ [F/km]</p>
+        
+        <h1>6ª Questão (3 pontos)</h1>
+        <p>Uma LT possui os seguintes parâmetros: R = 0,0715 [Ω/km], Xʟ = 0,512 [Ω/km], G = 0, B = 3,165 x 10⁻⁶ [Siemens/km], f = 60 Hz, 300km. Determinar:</p>
+        <p>a) Função de propagação;</p>
+        <p>b) Constante de atenuação;</p>
+        <p>c) Constante de fase;</p>
+        <p>d) Velocidade de propagação e Comprimento de onda;</p>
+        <p>e) Impedância característica;</p>
+        <p>f) Impedância natural.</p>
+        <p>g) Qual deverá ser a tensão no transmissor quando a tensão no receptor for de 345kV, com a LT fornecendo:</p>
+        <p>
+            a. Potência igual a potência natural ou característica;<br>
+            b. Potência igual a 0,8 da potência natural ou característica;<br>
+            c. Potência igual a 1,2 da potência natural ou característica;
+        </p>
 
-    <h1>Uma LT ideal, Z0=50Ω, comprimento l=200km é energizada por uma fonte de tensão contínua U=100kV. Calcular: a. Valores de tensão e corrente no receptor com a LT em vazio, no instante t=l/v; b. Valores de tensão e corrente no receptor com a LT em curto; c. Valores de tensão e corrente no receptor para Z2=20Ω; d. Valores de tensão e corrente no receptor para Z2=80Ω; e. Qual é o tempo necessário para que a LT toda atinja novos valores de tensão, sabendo se que L=0,62x10-3 [H/km] e C=0,216 x10-6 [F/km]</h1>
-    <h2></h2>
+        <hr>
+
+        <section class="calculator-container">
+            <h1>Calculadora de Linhas de Transmissão</h1>
+            <p>Insira os parâmetros da linha para realizar os cálculos.</p>
+
+            <section class="input-section">
+                <h2>Parâmetros da Linha</h2>
+                <div class="form-group">
+                    <label for="R">Resistência (Ω/km):</label>
+                    <input type="number" id="R" step="0.000001" value="0.01772">
+                </div>
+                <div class="form-group">
+                    <label for="L">Indutância (mH/km):</label>
+                    <input type="number" id="L" step="0.000001" value="0.704685">
+                </div>
+                <div class="form-group">
+                    <label for="C">Capacitância (μF/km):</label>
+                    <input type="number" id="C" step="0.000001" value="0.01622637">
+                </div>
+                <div class="form-group">
+                    <label for="length">Comprimento da linha (km):</label>
+                    <input type="number" id="length" value="300">
+                </div>
+                <div class="form-group">
+                    <label for="V_nominal">Tensão nominal (kV):</label>
+                    <input type="number" id="V_nominal" value="500">
+                </div>
+                <div class="form-group">
+                    <label for="fp_carga">Fator de potência:</label>
+                    <input type="number" id="fp_carga" step="0.01" min="0" max="1" value="0.9">
+                </div>
+                <button type="button" id="calculate-btn">Calcular</button>
+            </section>
+
+            <section class="results-section blurred">
+                <h2>Resultados</h2>
+                <div id="results-content">
+                    <h3>Parâmetros da Linha</h3>
+                    <div id="basic-params"></div>
+    
+                    <h3>Parâmetros do Quadripolo</h3>
+                    <div id="quadripole-params"></div>
+    
+                    <h3>Análise de Desempenho</h3>
+                    <div id="performance-analysis"></div>
+    
+                    <h3>Observações Técnicas</h3>
+                    <div id="technical-notes"></div>
+                </div>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
+
