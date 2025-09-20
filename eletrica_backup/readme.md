@@ -1,1 +1,0 @@
-Não é suposto você ver isso aqui. Você pode ir para [https://github.io/latencyxd/eletrica](https://github.io/latencyxd/eletrica) para poder ver os conteúdos.
