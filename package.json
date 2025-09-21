@@ -1,0 +1,15 @@
+{
+  "name": "didactic-octo-spoon",
+  "version": "1.0.0",
+  "description": "Notas pessoais / site estático",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

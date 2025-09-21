@@ -1,1 +1,331 @@
-Aula 03 - Desempenho Eletrico
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aula 03 - Desempenho Elétrico de Linhas de Transmissão</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="container">  
+</div>   <nav class="sidebar"> </nav>
+<ul><a href="./index.html">Voltar a raiz </a></lu>
+                
+    <main>
+    <h1>Aula 03 - Desempenho Elétrico de Linhas de Transmissão</h1>
+
+    <h2>1. Conceitos Fundamentais</h2>
+    
+    <div class="concept-box">
+      <h3>Linha de Transmissão Ideal</h3>
+      <p>Uma linha de transmissão ideal é constituída por dois condutores metálicos retilíneos, completamente isolados e suficientemente distantes do solo para não sofrer influências externas.</p>
+      <p><strong>Características:</strong></p>
+      <ul>
+        <li>Resistência elétrica dos condutores = 0</li>
+        <li>Dielétrico perfeito entre condutores</li>
+        <li>Ausência de perdas de energia</li>
+        <li>Capacitância e indutância definíveis</li>
+      </ul>
+    </div>
+
+    <h3>1.1 Analogia Hidráulica</h3>
+    <p>O fechamento da chave em uma linha de transmissão pode ser comparado à abertura de uma comporta em uma represa. Assim como a água não enche o canal instantaneamente, os campos elétrico e magnético se estabelecem progressivamente ao longo da linha.</p>
+
+    <div class="important-note">
+      <p><strong>Conceito Fundamental:</strong> Cargas elétricas em movimento geram campos magnéticos, e a presença das cargas gera campos elétricos. Durante a energização, estes campos se propagam do transmissor para o receptor.</p>
+    </div>
+
+    <h2>2. Parâmetros Fundamentais</h2>
+
+    <div class="formula-box">
+      <h3>Velocidade de Propagação</h3>
+      <p>$$v = \frac{l}{t} \text{ [km/s]}$$</p>
+      <p>$$v = \frac{1}{\sqrt{LC}} \text{ [km/s]}$$</p>
+    </div>
+
+    <div class="formula-box">
+      <h3>Impedância de Surto</h3>
+      <p>$$Z_s = \sqrt{\frac{L}{C}} \text{ [Ω]}$$</p>
+    </div>
+
+    <div class="formula-box">
+      <h3>Velocidade Máxima e Comprimento de Onda</h3>
+      <p>$$v_{max} = \lambda \cdot f$$</p>
+      <p>$$\lambda = \frac{v}{f} = \frac{3 \times 10^8}{60} = 5000 \text{ km}$$</p>
+    </div>
+
+    <h2>3. Análise Energética</h2>
+
+    <div class="concept-box">
+      <p><strong>Armazenamento de Energia:</strong> Em uma linha ideal, a energia fornecida pela fonte (UI₀t) não é dissipada, mas armazenada nos campos elétrico e magnético em partes iguais.</p>
+    </div>
+
+    <div class="grid-container">
+      <div class="case-study">
+        <h4>Caso 1: Energia que chega = Energia dissipada</h4>
+        <p>Toda energia que chega ao receptor é dissipada. A corrente e tensão não sofrem alterações, operando como linha infinita.</p>
+      </div>
+      
+      <div class="case-study">
+        <h4>Caso 2: Energia que chega > Energia dissipada</h4>
+        <p>Excesso de energia no receptor resulta em elevação da tensão (campo elétrico armazena energia excedente).</p>
+      </div>
+    </div>
+
+    <div class="case-study">
+      <h4>Caso 3: Energia que chega < Energia dissipada</h4>
+      <p>Déficit de energia resulta em redução da tensão (campo magnético armazena energia adicional).</p>
+    </div>
+
+    <h2>4. Efeito Ferranti</h2>
+
+    <div class="important-note">
+      <h3>Definição</h3>
+      <p>O aumento da tensão no receptor com relação à tensão no transmissor é denominado <strong>Efeito Ferranti</strong>.</p>
+    </div>
+
+    <h4>Principais Implicações:</h4>
+    <ul>
+      <li>Necessidade de aumento do nível de isolamento das linhas</li>
+      <li>Aumento do Efeito Corona</li>
+      <li>Necessidade de condutores com seções maiores</li>
+      <li>Auto-excitação de máquinas síncronas, levando a tensões incontroláveis</li>
+    </ul>
+
+    <h4>Casos Particulares:</h4>
+    <div class="grid-container">
+      <div class="example-box">
+        <h5>Linha com Terminal Aberto</h5>
+        <p>A corrente tende a zero progressivamente do receptor ao transmissor. O campo elétrico armazena toda a energia cedida pelo campo magnético.</p>
+      </div>
+      
+      <div class="example-box">
+        <h5>Linha com Terminal em Curto</h5>
+        <p>A tensão tende a zero progressivamente do receptor ao transmissor. O campo magnético armazena toda a energia cedida pelo campo elétrico.</p>
+      </div>
+    </div>
+
+    <h2>5. Teoria das Ondas em Linhas de Transmissão</h2>
+
+    <div class="concept-box">
+      <p>A tensão e corrente se estabelecem ao longo da linha sob forma de ondas que se deslocam com velocidade próxima à da luz no vácuo.</p>
+    </div>
+
+    <div class="formula-box">
+      <h3>Equações Fundamentais</h3>
+      <p>$$U = U_d + U_r$$</p>
+      <p>$$I = I_d + I_r$$</p>
+      <p>Onde: d = direta (incidente), r = refletida</p>
+    </div>
+
+    <h3>5.1 Condições de Reflexão</h3>
+    <table class="parameter-table">
+      <tr>
+        <th>Condição</th>
+        <th>Impedância Terminal</th>
+        <th>Resultado</th>
+      </tr>
+      <tr>
+        <td>Sem reflexão</td>
+        <td>Z₂ = Z₀</td>
+        <td>U₂ = U, I₂ = I₀</td>
+      </tr>
+      <tr>
+        <td>Elevação de tensão</td>
+        <td>Z₂ > Z₀</td>
+        <td>Ondas de tensão refletem com mesma polaridade</td>
+      </tr>
+      <tr>
+        <td>Redução de tensão</td>
+        <td>Z₂ < Z₀</td>
+        <td>Ondas de corrente refletem com polaridade inversa</td>
+      </tr>
+    </table>
+
+    <h2>6. Classificação das Linhas de Transmissão</h2>
+
+    <table class="parameter-table">
+      <tr>
+        <th>Classificação</th>
+        <th>Comprimento</th>
+        <th>Características</th>
+      </tr>
+      <tr>
+        <td>Linhas Curtas</td>
+        <td>
+          &lt; 60-80 km (V &lt; 150kV)<br>
+          &lt; 40 km (150-400kV)<br>
+          &lt; 20 km (V &gt; 400kV)
+        </td>
+        <td>Susceptância capacitiva desprezível</td>
+      </tr>
+      <tr>
+        <td>Linhas Médias</td>
+        <td>80 km &lt; L &lt; 240 km</td>
+        <td>Metade da capacitância em cada extremo</td>
+      </tr>
+      <tr>
+        <td>Linhas Longas</td>
+        <td>&gt; 240 km</td>
+        <td>Parâmetros distribuídos considerados</td>
+      </tr>
+    </table>
+
+    <h2>7. Parâmetros Elétricos</h2>
+
+    <div class="formula-box">
+      <h3>Impedância e Admitância</h3>
+      <p>$$Z_{série} = R + jX_L \text{ [Ω]}$$</p>
+      <p>$$Y_{paralelo} = G + jB \text{ [S]}$$</p>
+    </div>
+
+    <table class="parameter-table">
+      <tr>
+        <th>Parâmetro</th>
+        <th>Unitário</th>
+        <th>Total</th>
+        <th>Unidade</th>
+      </tr>
+      <tr>
+        <td>Resistência</td>
+        <td>r [Ω/km]</td>
+        <td>R = r·d [Ω]</td>
+        <td>Dissipação de potência ativa</td>
+      </tr>
+      <tr>
+        <td>Indutância</td>
+        <td>l [H/km]</td>
+        <td>X_L = ωl·d [Ω]</td>
+        <td>Campos magnéticos</td>
+      </tr>
+      <tr>
+        <td>Capacitância</td>
+        <td>c [F/km]</td>
+        <td>X_C = 1/(ωc·d) [Ω]</td>
+        <td>Campos elétricos</td>
+      </tr>
+      <tr>
+        <td>Condutância</td>
+        <td>g [S/km]</td>
+        <td>G = g·d [S]</td>
+        <td>Correntes de fuga</td>
+      </tr>
+    </table>
+
+    <h2>8. Constante de Propagação</h2>
+
+    <div class="formula-box">
+      <p>$$\gamma = \alpha + j\beta$$</p>
+      <p>Para linhas aéreas: γ ≈ 0,0013 rad/km</p>
+      <p>Para cabos: γ = 0,0046 a 0,0091 rad/km</p>
+    </div>
+
+    <div class="formula-box">
+      <h3>Comprimento Elétrico (Ângulo de Linha)</h3>
+      <p>$$\theta = \beta \cdot d \text{ [rad]}$$</p>
+      <p>Exemplo: Linha de 300 km → θ = 0,39 rad = 22,34°</p>
+    </div>
+
+    <div class="formula-box">
+      <h3>Velocidade de Propagação</h3>
+      <p>$$v = f\lambda = \frac{\omega}{\beta} = \frac{1}{\sqrt{lc}}$$</p>
+    </div>
+
+    <h2>9. Potência Característica (SIL)</h2>
+
+    <div class="concept-box">
+      <p><strong>Surge Impedance Loading (SIL):</strong> Potência transportada quando a potência reativa gerada pela capacitância é consumida na indutância série.</p>
+    </div>
+
+    <div class="formula-box">
+      <p>$$P_0 = \frac{V^2}{Z_c} = V^2 \sqrt{\frac{C}{L}}$$</p>
+    </div>
+
+    <h3>9.1 Line Charging (Reativo Transversal)</h3>
+    <div class="formula-box">
+      <p>$$Q_c = V^2 \cdot B_C \text{ [Mvar]}$$</p>
+      <p>Exemplo: B_C = 5,74×10⁻⁹ S/m → 1,43 kvar/m = 1,43 Mvar/km</p>
+    </div>
+
+    <h2>10. Indicadores de Desempenho</h2>
+
+    <h3>10.1 Regulação de Tensão</h3>
+    <div class="formula-box">
+      <p>$$\text{Regulação} = \frac{|V_1| - |V_2|}{|V_2|} \times 100\%$$</p>
+    </div>
+
+    <h3>10.2 Rendimento</h3>
+    <div class="formula-box">
+      <p>$$\eta = \frac{P_2}{P_1} \times 100\%$$</p>
+    </div>
+
+    <h4>Fontes de Perdas:</h4>
+    <ul>
+      <li>Efeito Joule nos condutores</li>
+      <li>Perdas no dielétrico (Efeito Corona)</li>
+      <li>Correntes de Foucault e histerese magnética</li>
+      <li>Perdas em cabos para-raios</li>
+    </ul>
+
+    <h2>11. Representação por Quadripolos</h2>
+
+    <div class="concept-box">
+      <p>Estruturas complexas podem ser modeladas matricialmente através de quadripolos, facilitando o estudo sistemático para diferentes cargas e excitações.</p>
+    </div>
+
+    <h4>Condições dos Quadripolos:</h4>
+    <ul>
+      <li>Uma entrada e uma saída</li>
+      <li>Passivos (sem fontes)</li>
+      <li>Lineares</li>
+      <li>Bilaterais</li>
+    </ul>
+
+    <h2>12. Relações de Potência</h2>
+
+    <div class="formula-box">
+      <h3>Fluxos de Potência nos Terminais</h3>
+      <p>$$P = \frac{V_1 V_2}{X} \sin(\delta_1 - \delta_2)$$</p>
+      <p>$$Q = \frac{V_1^2 - V_1 V_2 \cos(\delta_1 - \delta_2)}{X}$$</p>
+    </div>
+
+    <div class="important-note">
+      <p><strong>Nota:</strong> Quando as tensões são especificadas em kV, as potências são obtidas em MW. Se utilizadas tensões entre fases, as potências resultantes são trifásicas.</p>
+    </div>
+
+    <h2>13. Exemplo Prático</h2>
+
+    <div class="example-box">
+      <h3>Linha de Transmissão Trifásica - 60 Hz</h3>
+      <p><strong>Dados:</strong></p>
+      <ul>
+        <li>R = 0,107×10⁻³ Ω/m</li>
+        <li>L = 1,35×10⁻⁶ H/m</li>
+        <li>C = 8,45×10⁻¹² F/m</li>
+        <li>Tensão inicial: 220 kV</li>
+        <li>Comprimento: 362 km</li>
+      </ul>
+      
+      <p><strong>Calcular:</strong></p>
+      <p>(a) Impedância característica Z_c e constante de propagação γ</p>
+      <p>(b) Circuito π equivalente da linha</p>
+      
+      <div class="formula-box">
+        <p>$$Z_c = \sqrt{\frac{L}{C}} = \sqrt{\frac{1,35 \times 10^{-6}}{8,45 \times 10^{-12}}} \approx 400 \text{ Ω}$$</p>
+      </div>
+    </div>
+
+    <h2>14. Conclusões</h2>
+
+    <div class="concept-box">
+      <p>O desempenho elétrico de linhas de transmissão depende fundamentalmente dos parâmetros distribuídos da linha e das condições de operação. A compreensão dos fenômenos de propagação de ondas, efeito Ferranti e características de reflexão é essencial para o projeto e operação segura de sistemas elétricos de potência.</p>
+    </div>
+
+    <div class="important-note">
+      <p><strong>Lembre-se:</strong> "Entender um fenômeno significa associá-lo a números" - A modelagem matemática precisa é fundamental para análises confiáveis de sistemas de transmissão.</p>
+    </div>
+    </main>
+  </div>
+</body>
+</html>

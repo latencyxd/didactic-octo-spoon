@@ -1,0 +1,10 @@
+{
+  "server": { "baseDir": "eletrica" },
+  "files": [
+    "eletrica/**/*.html",
+    "eletrica/**/*.css",
+    "eletrica/**/*.js",
+    "eletrica/**/assets/**/*.*"
+  ],
+  "port": 3000
+}
