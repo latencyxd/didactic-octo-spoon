@@ -4,40 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Documentação - Energia Elétrica</title>
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./common/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
- <header>
-  <h1>Energia Elétrica - Minhas notas de aula</h1>
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    <h1>Energia Elétrica - Minhas notas de aula</h1>
   </header>
 
- <div class="container">
-  <nav class="sidebar">
-   <h2>Módulos</h2>
-   <ul>
-    <li><a href="circuitos-magneticos/index.html">Circuitos Magnéticos</a></li>
-    <li><a href="eficiencia-auditorias/index.html">Eficiência em Auditorias</a></li>
-    <li><a href="eficiencia-sistemas/index.html">Eficiência em Sistemas</a></li>
-    <li><a href="geracao-de-energia-eletrica/index.html">Geração de Energia</a></li>
-    <li><a href="mercado-comercializacao/index.html">Mercado & Comercialização</a></li>
-    <li><a href="qualidade-de-energia-eletrica/index.html">Qualidade de Energia</a></li>
-    <li><a href="topicos-especiais-cidades-inteligentes/index.html">Cidades Inteligentes</a></li>
-    <li><a href="topicos-especiais-smart-grids/index.html">Smart Grids</a></li>
-    <li><a href="transmissao-de-energia-eletrica/index.html">Transmissão de Energia</a></li>
-   </ul>
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-content">
+      <div class="sidebar-section">
+        <div class="section-title">Início</div>
+        <a href="./index.html" class="sidebar-item" data-page="home">
+          <div class="item-icon icon-home"></div>
+          <span class="item-text">Página Inicial</span>
+          <div class="tooltip">Página Inicial</div>
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="section-title">Módulos</div>
+        
+        <a href="./circuitos-magneticos/index.html" class="sidebar-item" data-page="circuitos">
+          <div class="item-icon icon-circuit"></div>
+          <span class="item-text">Circuitos Magnéticos</span>
+          <div class="tooltip">Circuitos Magnéticos</div>
+        </a>
+        
+        <a href="./eficiencia-auditorias/index.html" class="sidebar-item" data-page="auditoria">
+          <div class="item-icon icon-efficiency"></div>
+          <span class="item-text">Eficiência em Auditorias</span>
+          <div class="tooltip">Eficiência em Auditorias</div>
+        </a>
+        
+        <a href="./eficiencia-sistemas/index.html" class="sidebar-item" data-page="sistemas">
+          <div class="item-icon icon-system"></div>
+          <span class="item-text">Eficiência em Sistemas</span>
+          <div class="tooltip">Eficiência em Sistemas</div>
+        </a>
+        
+        <a href="./geracao-de-energia-eletrica/index.html" class="sidebar-item" data-page="geracao">
+          <div class="item-icon icon-generation"></div>
+          <span class="item-text">Geração de Energia</span>
+          <div class="tooltip">Geração de Energia</div>
+        </a>
+        
+        <a href="./mercado-comercializacao/index.html" class="sidebar-item" data-page="mercado">
+          <div class="item-icon icon-market"></div>
+          <span class="item-text">Mercado & Comercialização</span>
+          <div class="tooltip">Mercado & Comercialização</div>
+        </a>
+        
+        <a href="./qualidade-de-energia-eletrica/index.html" class="sidebar-item" data-page="qualidade">
+          <div class="item-icon icon-quality"></div>
+          <span class="item-text">Qualidade de Energia</span>
+          <div class="tooltip">Qualidade de Energia</div>
+        </a>
+        
+        <a href="./topicos-especiais-cidades-inteligentes/index.html" class="sidebar-item" data-page="cidades">
+          <div class="item-icon icon-city"></div>
+          <span class="item-text">Cidades Inteligentes</span>
+          <div class="tooltip">Cidades Inteligentes</div>
+        </a>
+        
+        <a href="./topicos-especiais-smart-grids/index.html" class="sidebar-item" data-page="smart-grids">
+          <div class="item-icon icon-grid"></div>
+          <span class="item-text">Smart Grids</span>
+          <div class="tooltip">Smart Grids</div>
+        </a>
+
+        <a href="./transmissao-de-energia-eletrica/index.html" class="sidebar-item" data-page="transmissao">
+          <div class="item-icon icon-transmission"></div>
+          <span class="item-text">Transmissão de Energia</span>
+          <div class="tooltip">Transmissão de Energia</div>
+        </a>
+      </div>
+    </div>
   </nav>
 
-  <main class="content">
-   <h2>Bem-vindo!</h2>
-   <p>Este é o portal de estudos sobre Energia Elétrica. Escolha um módulo no menu lateral.</p>
-  </main>
- </div>
+  <div class="content">
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="main-content">
+      <!-- SEU CONTEÚDO AQUI -->
+      <h1>Título da Página</h1>
+      <h2>Seção 1</h2>
+      <p>Seu conteúdo aqui...</p>
+      
+      <h2>Seção 2</h2>
+      <p>Mais conteúdo...</p>
+      <!-- FIM DO SEU CONTEÚDO -->
+    </main>
+  </div>
 
- <footer>
-  <p>Vibecoded então vai ficar bugado :sob: </p>
- </footer>
+  <footer>
+    <p>Vibecoded então vai ficar bugado :sob:</p>
+  </footer>
+
+  <script src="./common/js/sidebar.js"></script>
+  
+  <script>
+    // Para marcar o item ativo baseado na página atual
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentUrl = new URL(window.location.href);
+      const sidebarItems = document.querySelectorAll('.sidebar-item');
+      
+      sidebarItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href) {
+          const linkUrl = new URL(href, currentUrl);
+          if (linkUrl.pathname === currentUrl.pathname) {
+            item.classList.add('active');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>

@@ -36,3 +36,5 @@ Este README serve para:
 
 ## Disclaimer 
 - isso aqui são só notas, não da pra aprender só com isso
+
+https://latencyxd.github.io/didactic-octo-spoon/eletrica
